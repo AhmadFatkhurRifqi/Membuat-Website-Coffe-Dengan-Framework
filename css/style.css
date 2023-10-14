@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(1, 0, 0, 0.8);
+  border-bottom: 5px solid #0017ff;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 8rem;
+}
+
+.jumbotron {
+  background-image: url(../img/pngtree.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 17rem 0;
+}
+
+.jumbotron .content h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+}
+
+.jumbotron .content p {
+  width: 30rem;
+}
+
+.jumbotron .content .lead {
+  font-size: 4rem;
+}
+
+.jumbotron .content .kata {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* Slider */
+.slider {
+  align-items: center;
+  justify-content: center;
+  background-color: #d4dcb1;
+  /* padding-top: 5rem; */
+}
+
+.slider .content {
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+.slider .content h1 {
+  font-family: Sacramento;
+  font-size: 3.5rem;
+}
+
+.slider .content p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.slide-container {
+  display: flex;
+  max-width: 1520px;
+  width: 100%;
+  padding: 40px 30px;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  background-color: #fff;
+  width: 100%;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  row-gap: 5px;
+}
+
+.image-content img {
+  height: 250px;
+}
+
+.slider ul li {
+  list-style: none;
+}
+
+.slider .card a {
+  margin: 0 0.5rem;
+}
+
+/* Portopolio */
+
+.portopolio {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 8rem; */
+}
+
+.portopolio .judul h1 {
+  font-family: Sacramento;
+  font-size: 5rem;
+}
+
+.portopolio .image-content {
+  max-width: 1100px;
+  columns: inherit;
+  padding: 3rem;
+}
+
+.portopolio .image-content .card .card-body {
+  top: 12rem;
+  background-color: #8c897d;
+  padding: 5px 0;
+  font-family: Sacramento;
+  letter-spacing: 3px;
+}
+
+/* blog */
+.blog {
+  max-width: 80rem;
+  /* padding-top: 7rem; */
+}
+
+.blog h1 {
+  font-family: Sacramento;
+  font-size: 4rem;
+}
+
+.blog .content .card-body h5 {
+  font-family: Sacramento;
+}
+
+.blog .line {
+  border-left: 0.7rem solid black;
+  border-right: 0.7rem solid black;
+  border-bottom: 1rem solid black;
+}
+
+.blog .card-left {
+  text-align: right;
+}
+
+.blog .card-body i {
+  font-size: 4rem;
+}
+
+/* address */
+
+.address .row h1 {
+  font-family: Sacramento;
+  font-size: 4rem;
+}
+
+/* FOOTER */
+.footer .card {
+  background-color: #b2b0a5;
+}
+
+.footer .card ul {
+  list-style: none;
+}
+
+.footer .card .isi li:hover {
+  color: rebeccapurple;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+/* Laptop */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+
+  .slider .card h5 {
+    font-size: 2rem;
+  }
+
+  .slider .card p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+  .slider .card li {
+    font-size: 1.5rem;
+    /* margin: 0 1.2rem; */
+  }
+
+  .portopolio .image-content .card .card-body {
+    top: 15rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .slider .card h5 {
+    font-size: 2rem;
+  }
+
+  .slider .card p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+  .slider .card a {
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 0 1.2rem;
+  }
+
+  .slider .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+/* Haedhphone */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 70%;
+  }
+
+  .portopolio .image-content .card .card-body {
+    top: 18rem;
+  }
+
+  .blog .card-left,
+  .blog .card-right {
+    text-align: center;
+  }
+}
